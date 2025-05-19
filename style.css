@@ -1,0 +1,37 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  text-align: center;
+  background: #f7f7f7;
+}
+
+input, button {
+  padding: 10px;
+  margin: 10px;
+  font-size: 16px;
+}
+
+#box {
+  margin: 30px auto;
+  width: 100px;
+  height: 100px;
+  background-color: #4CAF50;
+  line-height: 100px;
+  font-size: 30px;
+  color: white;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+/* Define animation */
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  30%  { transform: translateY(-30px); }
+  60%  { transform: translateY(15px); }
+  100% { transform: translateY(0); }
+}
+
+/* Animation class */
+.bounce {
+  animation: bounce 0.6s ease;
+}
